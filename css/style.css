@@ -55,10 +55,10 @@ ol > li, .tutoring-intro ul > li{
 }
 
 li a.current{
-    color: white;
+    color: #FFCB05;
     text-decoration: underline; 
     text-decoration-thickness: 1.5px;
-    background-color: #D1A100;
+    background-color: #00274C;
 }
 
 #logo{
