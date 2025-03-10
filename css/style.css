@@ -215,10 +215,9 @@ ul, li{
         font-size: 3.5vw;
     }
 
-    .tutoring-additional{
-        ul > li{
-            margin-bottom: 2vw;
-        }
+    .tutoring-additional ul > li
+    {
+        margin-bottom: 2vw;
     }
 
     .cupboard-access a, .tutoring-about a, .tutoring-directory a, .tutoring-drop-in a, .caps-peer-counseling a, .caps-uwill a{
