@@ -167,7 +167,7 @@ ul, li{
         padding: 0vw 0vw 0vw 5vw;
     }
     
-    .physical-content, .mental-content, .life-content, .cupboard-access > li, .cupboard-get-involved > p, .cupboard-get-involved > ul, .cupboard-location > p, .cupboard-hours > p, .tutoring-about > p, .tutoring-about > h3, .tutoring-additional > ul, .tutoring-directory > p, .tutoring-drop-in > p, .caps-about-us > p, .caps-find-us > p, .caps-mental-health > p, .caps-peer-counseling > h3, .caps-peer-counseling > p, .caps-lets-talk > h3, .caps-lets-talk > p, .caps-uwill > h3, .caps-uwill > p, .caps-hours > p
+    .physical-content, .mental-content, .life-content, .cupboard-access > p, .cupboard-get-involved > p, .cupboard-get-involved > ul, .cupboard-location > p, .cupboard-hours > p, .tutoring-about > p, .tutoring-about > h3, .tutoring-additional > ul, .tutoring-directory > p, .tutoring-drop-in > p, .caps-about-us > p, .caps-find-us > p, .caps-mental-health > p, .caps-peer-counseling > h3, .caps-peer-counseling > p, .caps-lets-talk > h3, .caps-lets-talk > p, .caps-uwill > h3, .caps-uwill > p, .caps-hours > p
     {
         padding: 0vw 10vw 0vw 10vw;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -214,7 +214,7 @@ ul, li{
         font-size: 3.5vw;
     }
 
-    .tutoring-about a, .tutoring-directory a, .tutoring-drop-in a, .caps-peer-counseling a, .caps-uwill a{
+    .cupboard-access a, .tutoring-about a, .tutoring-directory a, .tutoring-drop-in a, .caps-peer-counseling a, .caps-uwill a{
         display: block;
         font-size: 4vw;
         padding-top: 1.5vw;
