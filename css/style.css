@@ -235,7 +235,7 @@ ul, li{
     #caps-telephone
     {
         color: #9A3324;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     .caps-peer-counseling > img, .caps-lets-talk > img, .caps-uwill > img{
