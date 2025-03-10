@@ -1,0 +1,276 @@
+html, body {
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.skip a{
+    position: absolute;
+    color: black;
+    background-color: #ffcb05;
+    top: -20px;
+    font-weight: bold;
+}
+
+.skip a:focus{
+    position: fixed;
+    z-index: 2;
+    top: auto;
+    left: auto;
+    text-decoration: none;
+    padding: 10px;
+    font-size: min(3vw, 25px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcb05;
+  }
+  
+li a, ol > li, .tutoring-intro ul > li, .tutoring-about ul > li, .tutoring-drop-in > ul > li{
+    display: block;
+    color: Black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: min(3vw, 25px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ol > li, .tutoring-intro ul > li{
+    color: #2F65A7;
+}
+
+.tutoring-about ul > li, .tutoring-drop-in ul > li{
+    padding: 5px 0px 5px 0px;
+    color: 	#9A3324;
+}
+
+li a.current{
+    color: white;
+    text-decoration: underline; 
+    text-decoration-thickness: 1.5px;
+    background-color: #D1A100;
+}
+
+#logo{
+    width: 15%;
+    height: 15%;
+}
+
+.pageHeader{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0px 4% 2%;
+    border: 2px solid black;
+    background-image: url("../images/header.JPG");
+    background-attachment: fixed;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pageHeader span{
+    background-color: #00274C;
+}
+
+h1{
+    font-size: max(4vw, 18px);
+    text-align: center;
+    color: #FFCB05;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+h2{
+    font-size: max(3vw, 26px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0px 10px 0px;
+    color: #00274C;
+    text-decoration: #FFCB05 underline;
+    text-decoration-thickness: 5px;
+}
+
+.intro > h2, .cupboard-about-us > h2, .cupboard-provide > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ol, .tutoring-intro ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+ul, li{
+    list-style: none;
+}
+
+#explanation, #cupboard-about-content, #cupboard-provide-content, #tutoring-intro-content{
+    font-size: max(2vw,18px);
+    font-family: Rubix, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 1%;
+}
+
+@media screen{
+    .container{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         row-gap: 10px;
+         column-gap: 15px;
+         align-items: center;
+    }
+
+    .intro{
+        grid-column: 1 / -1;
+    }
+
+    .health-img, .life-img{
+        display: grid;
+        grid-column: 1 / -1;
+    }
+
+    .health-img figure > img, .life-img figure > img, .cupboard-image figure > img, .tutoring-about-image img, .tutoring-directory-image img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .health-img figure > figcaption, .life-img figure > figcaption, .cupboard-image figure > figcaption{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: max(1vw,15px);
+        color: #9A3324;
+    }
+
+    .health-content, .life-outside-classroom{
+        display: grid;
+        grid-column: 1 / -1;
+    }
+
+    .health-content h2, .life-outside-classroom h2, .cupboard-access > h2, .cupboard-get-involved > h2, .cupboard-location > h2, .cupboard-hours > h2, .tutoring-about > h2, .tutoring-additional > h2, .tutoring-directory > h2, .tutoring-drop-in > h2, .caps-about-us > h2, .caps-find-us > h2, .caps-mental-health > h2, .caps-hours > h2{
+        padding: 0vw 0vw 0vw 5vw;
+    }
+    
+    .physical-content, .mental-content, .life-content, .cupboard-access > li, .cupboard-get-involved > p, .cupboard-get-involved > ul, .cupboard-location > p, .cupboard-hours > p, .tutoring-about > p, .tutoring-about > h3, .tutoring-additional > ul, .tutoring-directory > p, .tutoring-drop-in > p, .caps-about-us > p, .caps-find-us > p, .caps-mental-health > p, .caps-peer-counseling > h3, .caps-peer-counseling > p, .caps-lets-talk > h3, .caps-lets-talk > p, .caps-uwill > h3, .caps-uwill > p, .caps-hours > p
+    {
+        padding: 0vw 10vw 0vw 10vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: max(1.2vw,18px);
+    }
+
+    .cupboard-provide-image{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .cupboard-provide-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cupboard-access a, .cupboard-get-involved a, .tutoring-about a, .tutoring-directory a, .tutoring-drop-in a, .caps-peer-counseling a, .caps-uwill a{
+        width: auto;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        color: #FFCB05;
+        background-color: #00274C;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .cupboard-get-involved ul ul
+    {
+        padding-left: 10vw;
+    }
+
+    .cupboard-get-involved ul ul > li  {
+        list-style-type: disc;
+    }
+
+    .tutoring-about p:first-of-type{
+        text-align: center;
+    }
+
+    .tutoring-about ul > li{
+        font-size: 3.5vw;
+    }
+
+    .tutoring-about a, .tutoring-directory a, .tutoring-drop-in a, .caps-peer-counseling a, .caps-uwill a{
+        display: block;
+        font-size: 4vw;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+        text-align: center;
+    }
+
+    #caps-h1{
+        font-size: max(3vw, 12px);
+    }
+
+    #caps-telephone
+    {
+        color: #9A3324;
+        text-decoration: none;
+    }
+
+    .caps-peer-counseling > img, .caps-lets-talk > img, .caps-uwill > img{
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .caps-uwill > img{
+        width: 80%;
+    }
+}
+
+.footer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #FFCB05;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+#footerLogo{
+    height: auto;
+    width: auto;
+    max-width: 15%;
+}
+
+.footer p{
+    font-size: 15px;
+    grid-column: 2/-1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#xLogo, #facebookLogo, #linkedinLogo{
+    width: 50px;
+    height: 50px;
+    padding: 0px 10px;
+}

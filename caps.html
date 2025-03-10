@@ -3,68 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>CAPS</title>
 </head>
 <body>
     <header>
-        <a href = "">Skip to Main Content</a>
-              <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div class="skip"><a href= #main>Skip to Main Content</a></div>
               <nav>
                   <ul>
                       <li><a href = "index.html">Home</a></li>
                       <li><a href = "food_pantry.html">Food Pantry</a></li>
                       <li><a href = "tutoring.html">Tutoring</a></li>
-                      <li><a href = "caps.html">CAPS</a></li>
+                      <li><a href = "caps.html" class = "current" >CAPS</a></li>
                   </ul>
               </nav>
-              <h1>Counseling and Psychological Services (CAPS)</h1>
+              <div class = "pageHeader">
+                <img id = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+                <span>
+                    <h1 id = "caps-h1">Counseling and Psychological Services</h1>
+                </span>
+            </div>
       
           </header>
 
-          <main>
-            <div>
+          <main id = "main">
+            <section class = "caps-about-us">
                 <h2>ABOUT US</h2>
                 <p>CAPS is committed to creating an environment based on our values of multicultural, multi-disciplinary and multi-theoretical practices that allow our diverse student body to access care, receive high quality services and take positive pathways to mental health. We are happy to offer both in-person and virtual services. </p>
-            </div>
+            </section>
 
-            <div>
+            <section class = "caps-find-us">
                 <h2>FIND US</h2>
-                <p>You can find us at our Front Desk in the Michigan Union 4th Floor. We are always ready to help support you throughout the day to assist you with your needs to answer questions, and get you to the right place. <br> We can be reached by phone at: (734) 764-8312. </p>
-            </div>
+                <p>You can find us at our Front Desk in the Michigan Union 4th Floor. We are always ready to help support you throughout the day to assist you with your needs to answer questions, and get you to the right place. <br> We can be reached by phone at: <a href = "tel:+7347648312" id = "caps-telephone">(734) 764-8312</a>.</p>
+            </section>
 
-            <div>
+            <section class = "caps-mental-health">
                 <h2>Mental Health Support Options</h2>
                 <p>
                     Here at CAPS, we think your mental and emotional health is of utmost importance and we are here to support you in any way possible. In this section, you will be introduced to a wide variety of our services.
                 </p>
+                <br>
+            </section>
 
+            <section class = "caps-peer-counseling">
                 <h3>Individual Peer Counseling</h3>
                 <img src = "images/ipc.png" alt = "logo saying CAPS individual peer counseling">
                 <p>
                     Individual Peer Counseling(IPC) is a way for students to receive counseling from a fellow students at UMSI and serves as an alternative to receiving counseling from an adult, which may be more scary for some people. Our primary goal is to listen and support you, and provide resources where needed.<br><br>
 
-                    Students interested in receiving peer counseling can submit <a href = " https://forms.gle/TeVSrB6Bjb4fCEpo9">THIS FORM</a>, or can be referred from a CAPS counselor to one of our Peer Counselors.  
+                    Students interested in receiving peer counseling can submit this form:
+                    <br><a href = " https://forms.gle/TeVSrB6Bjb4fCEpo9">HERE</a>
+                    <br> or can be referred from a CAPS counselor to one of our Peer Counselors.  
                 </p>
+                <br>
+            </section>
 
+            <section class = "caps-lets-talk">
                 <h3>Let's Talk</h3>
                 <p>
                     “Let's Talk” is a free program that serves as a great entry way for students who are just getting started with mental health services. It provides casual meetings with counselors during specific drop-in times for initial support and advice.
                     <br>
                     The hours and location for Let's Talk can be found below:
-                    <img src = 'images/letstalk.png' alt = "Images showing the times and locations of each Let's Talk meeting.">
                 </p>
-                
+                <br>
+                <img src = 'images/letstalk.png' alt = "Images showing the times and locations of each Let's Talk meeting.">
+                <br>
+            </section>
+
+            <section class = "caps-uwill">
                 <h3>Uwill Teletherapy Services</h3>
                 <img src = "images/uwill_logo.jpg" alt = "logo of uwill">
                 <p>
                     Uwill provides students with access to a therapist of their choice via the mode of their choice - video, phone, chat or messaging. Teletherapy services are available during the day, as well as evenings, weekends, and holidays. Uwill has licensed mental health professionals available in all 50 states and providers in many countries of the world. Uwill is perfect for students who would like a quick therapist session or students who are enrolled, but not currently on campus.<br><br>
                     U of M students can have up to six sessions free of charge and can choose a therapist based on their preferences, which includes gender and race.
                     <br><br>
-                    To utilize this service, make an account with your U of M email in <a href = "https://app.uwill.com/">this site.</a>
+                    To utilize this service, make an account with your U of M email <a href = "https://app.uwill.com/">HERE</a>
                 </p>
-            </div>
+            </section>
 
-            <div>
+            <section class = "caps-hours">
                 <h2>Hours</h2>
                 <p>Monday - Thursday: 8am - 6pm<br>
                     Friday: 8am - 5pm<br>
@@ -74,11 +92,25 @@
                     Urgent/Crisis Support at CAPS:<br>
                     
                     Monday - Friday from 10am - 4:30pm</p>
-            </div>
+            </section>
+            <br>
           </main>
 
           <footer>
-            <p>University Health & Counseling | <a href="https://caps.umich.edu/">Counseling and Psychological Services (CAPS)</a></p>
+            <div class = "footer">
+                <a href = "https://www.si.umich.edu/"><img id = "footerLogo" src="images/footerLogo.png" alt="UMSI Logo"></a>
+                <p>© Copyright 2025 Regents of the University of Michigan <br/> <br />
+                    School of Information <br />
+                    University of Michigan<br />
+                    105 S State St.
+                    Ann Arbor, MI 48109-1285
+                </p>
+                <p class = "icons">
+                    <a href = "https://www.facebook.com/uomsi/"><img id = "facebookLogo" src="images/facebook-Icon.png" alt="Facebook Logo"></a>
+                    <a href = "https://x.com/umsi"><img id = "xLogo" src="images/twitter-Icon.png" alt="X Logo"></a>
+                    <a href = "https://www.linkedin.com/school/university-of-michigan---school-of-information/"><img id = "linkedinLogo" src="images/linkedin-icon.png" alt="LinkedIn Logo"></a>
+                </p>
+            </div>
         </footer>
 </body>
 </html>

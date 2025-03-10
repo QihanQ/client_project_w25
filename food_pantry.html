@@ -3,72 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Food Pantry</title>
 </head>
 <body>
 
     <header>
-            <a href = "">Skip to Main Content</a>
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div class="skip"><a href= #main>Skip to Main Content</a></div>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "food_pantry.html">Food Pantry</a></li>
+                <li><a href = "food_pantry.html" class = "current" >Food Pantry</a></li>
                 <li><a href = "tutoring.html">Tutoring</a></li>
                 <li><a href = "caps.html">CAPS</a></li>
             </ul>
         </nav>
-        <h1>MAIZE AND BLUE CUPBOARD</h1>
-        <img src="images/maizeandblue.jpg" alt="Photo of the inside of the maize and blue food pantry.">
+        <div class = "pageHeader">
+            <img id = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <span>
+                <h1>Maize And Blue Cupboard</h1>
+            </span>
+        </div>
     </header>
-    <main>
-        <div>
+    
+    <main id = "main">
+        <section class = "cupboard-about-us">
             <h2>ABOUT US</h2>
-            <p>The Maize and Blue Cupboard is a food pantry who's mission is to ensure members of the University of Michigan's community will have a reliable source of healthy and nutritious food.</p>
-        </div>
-        <div>
-            <h2>WHAT WE PROVIDE</h2>
-            <p>At Maize and Blue, you can find a wide range of items ranging from food food to cooking products to personal goods.</p>
-            <img src = "images/maizeandblueaboutus.jpg" alt = "Graphic showing the products you can find at maize and blue.">
-        </div>
-        <div>
-            <h2>ACCESSING MAIZE AND BLUE</h2>
-            <p>The Maize and Blue Cupboard is appointment only. This means that in order to access the food pantry, you must make an appointment online using the following link <a href = "https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2025-01">here!</a></p>
-        </div>
-        <div>
-            <h2>GET INVOLVED</h2>
-            <p>There are many ways you can get involved with Maize and Blue and contribute to our mission.</p>
-            <ul>
-                <li><strong>Volunteering: </strong>Anyone can help, no experience is necessary, and you can sign up for a shift that works with your schedule. Find a time slot that works for you <a href = "https://sessions.studentlife.umich.edu/track/3152">here!</a></li>
-                <li><strong>Money: </strong>We use monetary donations to purchase discounted food from a community food bank. Any amount can make a huge difference to our community. You can donate <a href="https://giving.umich.edu/basket/fund/702021">here!</a></li>
-                <li><strong>Goods: </strong>Consider donating produce, canned and dry goods, cookware and personal care items. To ensure the health and safety of students are met, we only accept items that comply with federal, state, and local food safety regulations. <br>
+            <p id = "cupboard-about-content">The Maize and Blue Cupboard is a food pantry who's mission is to ensure members of the University of Michigan's community will have a reliable source of healthy and nutritious food.</p>
+        </section>
+        <section class = "cupboard-image">
+            <figure>
+                <img src="images/maizeandblue.jpg" alt="Photo of the inside of the maize and blue food pantry.">
+                <figcaption>Inside view of the Cupboard</figcaption>
+            </figure>
+        </section>
 
-                <strong>Donation Tips:</strong><br>
-                -Fresh produce should be whole, with no signs of mold, spoilage or severe bruising.<br>
-                -Canned and dry goods should be unopened and in their original packaging, have an intact label with ingredients and allergens, and be in good condition (no dents, bulging, or rust).<br>
-                -We are unable to accept expired items.
+        <section class = "cupboard-provide">
+            <h2>WHAT WE PROVIDE</h2>
+            <p id = "cupboard-provide-content">At Maize and Blue, you can find a wide range of items ranging from food food to cooking products to personal goods.</p>
+        </section>
+        <section class = "cupboard-provide-image">
+            <img src = "images/maize-food.png" alt = "Graphic showing the food products you can find at maize and blue.">
+            <img src = "images/maize-kitchen.png" alt = "Graphic showing the kitchen products you can find at maize and blue.">
+            <img src = "images/maize-personal.png" alt = "Graphic showing the personal products you can find at maize and blue.">
+            <img src = "images/maize-support.png" alt = "Graphic showing the ways you can get support.">
+        </section>
+
+        <section class = "cupboard-access">
+            <h2>ACCESSING MAIZE AND BLUE</h2>
+            <li>The Maize and Blue Cupboard is appointment only. This means that in order to access the food pantry, you must make an appointment online using the following link: <a href = "https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2025-01">HERE</a></li>
+        </section>
+        <section class = "cupboard-get-involved">
+            <h2>GET INVOLVED</h2>
+            <p>There are many ways you can get involved with Maize and Blue and contribute to our mission.</p><br>
+            <ul>
+                <li><strong>Volunteering: </strong>Anyone can help, no experience is necessary, and you can sign up for a shift that works with your schedule. Find a time slot that works for you: <a href = "https://sessions.studentlife.umich.edu/track/3152">HERE</a></li>
+                <li><strong>Money: </strong>We use monetary donations to purchase discounted food from a community food bank. Any amount can make a huge difference to our community. You can donate: <a href="https://giving.umich.edu/basket/fund/702021">HERE</a></li>
+                <li><strong>Goods: </strong>Consider donating produce, canned and dry goods, cookware and personal care items. To ensure the health and safety of students are met, we only accept items that comply with federal, state, and local food safety regulations. <br> <br>
+                <li><strong>Donation Tips:</strong><br>
+                    <ul>
+                        <li>                
+                            Fresh produce should be whole, with no signs of mold, spoilage or severe bruising.<br>
+                        </li>
+                        <li>                
+                            Canned and dry goods should be unopened and in their original packaging, have an intact label with ingredients and allergens, and be in good condition (no dents, bulging, or rust).<br>
+                        </li>
+                        <li>
+                            We are unable to accept expired items.
+                        </li>
+                    </ul>
                 </li>
             </ul>
-        </div>
-        <div>
+        </section>
+
+        <section class = "cupboard-location">
             <h2>LOCATION</h2>
-            <p>Located in the basement of the Betsy Barbour Residence Hall, please enter via the Maynard entrance only to ensure privacy for residents. Please contact us if you need ramp or elevator access.
+            <p>Located in the basement of the Betsy Barbour Residence Hall, please enter via the Maynard entrance only to ensure privacy for residents. <br>Please contact us if you need ramp or elevator access.
             <br>
             Address: <a href = "https://www.google.com/maps/place/Betsy+Barbour+Residence,+420+S+State+St,+Ann+Arbor,+MI+48109/@42.2772944,-83.7437539,17z/data=!3m1!4b1!4m5!3m4!1s0x883cae38ac94a547:0xf8a4be6e818a1f4!8m2!3d42.2772944!4d-83.7415652">420 S State St Ann Arbor, MI 48109</a></p>
-        </div>
-        <div>
+        </section>
+
+        <section class = "cupboard-hours">
             <h2>HOURS</h2>
             <p>Hours of Operation:<br>
                 Sunday: 2pm-6pm<br>
                 Monday - Thursday: 3pm-7pm<br>
                 Friday: 12pm-7pm<br>
-                Saturday: closed</p>
-        </div>
+                Saturday: closed</p> <br>
+        </section>
     </main>
     <footer>
-        <p>Maize and Blue | <a href="https://mbc.studentlife.umich.edu/">UM M&B Cupboard</a></p>
+        <div class = "footer">
+            <a href = "https://www.si.umich.edu/"><img id = "footerLogo" src="images/footerLogo.png" alt="UMSI Logo"></a>
+            <p>© Copyright 2025 Regents of the University of Michigan <br/> <br />
+                School of Information <br />
+                University of Michigan<br />
+                105 S State St.
+                Ann Arbor, MI 48109-1285
+            </p>
+            <p class = "icons">
+                <a href = "https://www.facebook.com/uomsi/"><img id = "facebookLogo" src="images/facebook-Icon.png" alt="Facebook Logo"></a>
+                <a href = "https://x.com/umsi"><img id = "xLogo" src="images/twitter-Icon.png" alt="X Logo"></a>
+                <a href = "https://www.linkedin.com/school/university-of-michigan---school-of-information/"><img id = "linkedinLogo" src="images/linkedin-icon.png" alt="LinkedIn Logo"></a>
+            </p>
+        </div>
     </footer>
-    
 </body>
 
 </html>

@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Tutoring</title>
 </head>
 <body>
     <header>
-        <a href = "">Skip to Main Content</a>
-              <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div class="skip"><a href= #main>Skip to Main Content</a></div>
               <nav>
                   <ul>
                       <li><a href = "index.html">Home</a></li>
                       <li><a href = "food_pantry.html">Food Pantry</a></li>
-                      <li><a href = "tutoring.html">Tutoring</a></li>
+                      <li><a href = "tutoring.html" class = "current" >Tutoring</a></li>
                       <li><a href = "caps.html">CAPS</a></li>
                   </ul>
               </nav>
-              <h1>Tutoring At UMSCI</h1>
-      
+              <div class = "pageHeader">
+                <img id = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+                <span>
+                    <h1>Tutoring At UMSI</h1>
+                </span>
+            </div>
           </header>
-          <main>
-            <div>
-                <p>The Academic Success Team at UMSI is dedicated to supporting students inside and outside of the classroom. This page is dedicated to connecting students to tutoring and academic support resources. Resources covered on this page include:</p>
-                   <ul>
+
+          <main id = "main">
+            <section class = "tutoring-intro">
+                <div id = "tutoring-intro-content">
+                    <p>The Academic Success Team at UMSI is dedicated to supporting students inside and outside of the classroom. This page is dedicated to connecting students to tutoring and academic support resources. Resources covered on this page include:</p>
+                </div>
+                <ul>
                     <li>UMSI Peer Tutoring</li>
                     <li>Additional Academic Support Resources</li>
                     <li>Peer-to-Peer Tutor Directory</li>
                     <li>Drop-In Academic Coaching</li>
-                   </ul>
-            </div>
+                </ul>
+            </section>
 
-            <div>
+            <section class = "tutoring-about-image">
+                <img src = "images/tutoringpic.JPG" alt = "3 people listening to a student talking as they are working on their computer">
+            </section>
+
+            <section class = "tutoring-about">
                 <h2>UMSI Peer Tutoring</h2>
 
                 <p>The UMSI Peer Tutoring program is an opportunity for UMSI students and students taking UMSI courses to engage with peer tutors and receive assistance and support in UMSI courses. There are two major types of peer tutoring services: programming tutoring and math tutoring.</p>
-
+                <br>
                 <h3>UMSCI Programming Tutoring</h3>
-                <img src = "images/tutoringpic.JPG" alt = "3 people listening to a student talking as they are working on their computer">
                 <p>UMSCI programming tutoring is mainly available for the following courses:</p>
                 <ul>
                     <li>SI 106 Programs, Information, and People</li>
@@ -46,7 +57,7 @@
                     <li>SI 507 Intermediate Programming</li>
                     <li>General Python support</li>
                 </ul>
-                <p>To book a programming peer tutoring session, please use the following link: <a href = "https://sites.google.com/umich.edu/umsitutoring/umsi-programming-tutoring?authuser=1#h.bmc1reygau8c">Book An Appointment</a></p>
+                <p>To book a programming peer tutoring session, please use the following link: <br><a href = "https://sites.google.com/umich.edu/umsitutoring/umsi-programming-tutoring?authuser=1#h.bmc1reygau8c">Book An Appointment</a></p>
 
                 <h3>UMSCI Math Tutoring</h3>
 
@@ -58,44 +69,48 @@
                     <li>General Math related course support</li>
                 </ul>
 
-                <p>To book a math peer tutoring session, please use the following link: <a href = "https://sites.google.com/umich.edu/umsitutoring/umsi-math-tutoring?authuser=1">Book An Appointment</a></p>
-            </div>
+                <p>To book a math peer tutoring session, please use the following link: <br> <a href = "https://sites.google.com/umich.edu/umsitutoring/umsi-math-tutoring?authuser=1">Book An Appointment</a></p>
+            </section>
 
-            <div>
+            <section class = "tutoring-additional">
                 <h2>Additional Academic Support Resources</h2>
                 <ul>
                     <li>
                         <strong>Sweetland Writing Center: </strong>The Sweetland Center for Writing is a great place to go to for help with student writing. Sweetland offeres one-on-one tutoring at a undergraduate and graduate level and also conducts writing courses. The Sweetland Center also provides support for all multilingual and international undergraduate students.
                     </li>
-
+                    <br>
                     <li>
                         <strong>English Language Institute: </strong>ELI exclusively serves members of the University of Michigan community with English for Academic Purposes courses and resources, GSI preparation, and TESOL courses that prepare students to teach English as a second or foreign language. 
                     </li>
-
+                    <br>
                     <li>
                         <strong>Math Lab: </strong>The Math Lab provides free tutoring for mathematics courses numbered through 217. Though help is not regularly available for other courses, the math lab will attempt to help with any mathematical questions you may have.
                     </li>
-
+                    <br>
                     <li>
                         <strong> Services for Students with Disabilities: </strong>
                         Services for Students with Disabilities (SSD) recognizes disability as an integral part of diversity and is committed to creating an inclusive and equitable educational environment for disabled students.
                     </li>
+                    <br>
                 </ul>
-            </div>
+            </section>
 
-            <div>
-                <h2>Peer-to-Peer Tutor Directory</h2>
+            <section class = "tutoring-directory-image">
                 <img src = "images/tutorpic2.JPG" alt = "man using hand gestures to explain to another person something.">
+            </section>
+            <section class = "tutoring-directory">
+                <h2>Peer-to-Peer Tutor Directory</h2>
                 <p>
                     The Peer-to-Peer Tutor Directory is a compilation of students who are offering tutoring services to their classmates.<br><br>
 
                     In this directory, you will find a list of names, contact info, tutoring rates, courses that they will be able to offer their services for, along with some additional information about each respective tutor.
                     <br><br>
-                    The link to the directory can be found <a href ="https://docs.google.com/spreadsheets/d/11CtKRblVZq3kcsD9Jp99g9GoMChfesv0JnbgZX31cZQ/edit?gid=0#gid=0">here.</a>
+                    The link to the directory can be found:
+                     <a href ="https://docs.google.com/spreadsheets/d/11CtKRblVZq3kcsD9Jp99g9GoMChfesv0JnbgZX31cZQ/edit?gid=0#gid=0">HERE</a>
                 </p>
-            </div>
+            </section>
 
-            <div>
+            <section class = "tutoring-drop-in">
                 <h2>Drop-In Academic Coaching</h2>
                     <p>
                     Drop-in academic success coaching sessions are an opportunity to meet 1:1 with our Graduate Academic Success Intern in order to receive help or support with the following topics:</p>
@@ -113,13 +128,27 @@
 
                 <p>Drop-In hours will be held every Thursday from 10-11 AM via Zoom. <br>
 
-                Access the queue through this 
-                <a href = "https://officehours.it.umich.edu/queue/1642">link.</a>
-            </p>
-            </div>
-          </main>
+                Access the queue through this link:<br>
+                <a href = "https://officehours.it.umich.edu/queue/1642">HERE</a>
+                </p>
+            </section>
+        </main>
+
           <footer>
-            <p>UMSI | <a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=1">UMSCI Tutoring</a></p>
+            <div class = "footer">
+                <a href = "https://www.si.umich.edu/"><img id = "footerLogo" src="images/footerLogo.png" alt="UMSI Logo"></a>
+                <p>© Copyright 2025 Regents of the University of Michigan <br/> <br />
+                    School of Information <br />
+                    University of Michigan<br />
+                    105 S State St.
+                    Ann Arbor, MI 48109-1285
+                </p>
+                <p class = "icons">
+                    <a href = "https://www.facebook.com/uomsi/"><img id = "facebookLogo" src="images/facebook-Icon.png" alt="Facebook Logo"></a>
+                    <a href = "https://x.com/umsi"><img id = "xLogo" src="images/twitter-Icon.png" alt="X Logo"></a>
+                    <a href = "https://www.linkedin.com/school/university-of-michigan---school-of-information/"><img id = "linkedinLogo" src="images/linkedin-icon.png" alt="LinkedIn Logo"></a>
+                </p>
+            </div>
         </footer>
 </body>
 </html>
