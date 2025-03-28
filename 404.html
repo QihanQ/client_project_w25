@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+</head>
+<body>
+    <header>
+        <div class="skip"><a href= #main>Skip to Main Content</a></div>
+              <nav>
+                  <ul>
+                      <li><a href = "index.html">Home</a></li>
+                      <li><a href = "food_pantry.html">Food Pantry</a></li>
+                      <li><a href = "tutoring.html" class = "current" >Tutoring</a></li>
+                      <li><a href = "caps.html">CAPS</a></li>
+                  </ul>
+              </nav>
+    </header>
+    <main id = "main">
+        <h1>404 - OOPS This Page Does Not Exist</h1>
+        <p>Don’t worry, even the best Wolverines get lost sometimes!</p>
+    </main>
+    <footer>
+        <div class = "footer">
+            <a href = "https://www.si.umich.edu/"><img id = "footerLogo" src="images/footerLogo.png" alt="UMSI Logo"></a>
+            <p>© Copyright <span id="year"></span> Regents of the University of Michigan <br> <br>
+                School of Information <br>
+                University of Michigan<br>
+                105 S State St.
+                Ann Arbor, MI 48109-1285
+            </p>
+            <p class = "icons">
+                <a href = "https://www.facebook.com/uomsi/"><img id = "facebookLogo" src="images/facebook-Icon.png" alt="Facebook Logo"></a>
+                <a href = "https://x.com/umsi"><img id = "xLogo" src="images/twitter-Icon.png" alt="X Logo"></a>
+                <a href = "https://www.linkedin.com/school/university-of-michigan---school-of-information/"><img id = "linkedinLogo" src="images/linkedin-icon.png" alt="LinkedIn Logo"></a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
