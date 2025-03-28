@@ -91,10 +91,11 @@
                 Saturday: closed</p> <br>
         </section>
     </main>
+    
     <footer>
         <div class = "footer">
             <a href = "https://www.si.umich.edu/"><img id = "footerLogo" src="images/footerLogo.png" alt="UMSI Logo"></a>
-            <p>© Copyright 2025 Regents of the University of Michigan <br> <br>
+            <p>© Copyright <span id="year"></span> Regents of the University of Michigan <br> <br>
                 School of Information <br>
                 University of Michigan<br>
                 105 S State St.
@@ -107,6 +108,9 @@
             </p>
         </div>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

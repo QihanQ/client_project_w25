@@ -280,3 +280,50 @@ ul, li{
     height: 50px;
     padding: 0px 10px;
 }
+
+
+@media screen and (min-width: 1000px){
+    .pageHeader{
+        padding-top: 80px;
+    }
+    .footer{
+        display: flex;
+        padding-right: 100px;
+    }
+
+    .footer p{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    #xLogo, #facebookLogo, #linkedinLogo{
+        width: 70px;
+        height: 70px;
+        padding: 0px 20px;
+    }
+
+    #facebookLogo{
+        padding-left: 60px;
+    }
+
+    .cupboard-access a, .tutoring-about a, .tutoring-directory a, .tutoring-drop-in a, .caps-peer-counseling a, .caps-uwill a{
+        font-size: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .physical-content, .mental-content, .life-content, .cupboard-access > p, .cupboard-get-involved > p, .cupboard-get-involved > ul, .cupboard-location > p, .cupboard-hours > p, .tutoring-about > p, .tutoring-about > h3, .tutoring-additional > ul, .tutoring-directory > p, .tutoring-drop-in > p, .caps-about-us > p, .caps-find-us > p, .caps-mental-health > p, .caps-peer-counseling > h3, .caps-peer-counseling > p, .caps-lets-talk > h3, .caps-lets-talk > p, .caps-uwill > h3, .caps-uwill > p, .caps-hours > p{
+        font-size: 1.75vw;
+    }
+
+    li a, ol > li, .tutoring-intro ul > li, .tutoring-about ul > li, .tutoring-drop-in > ul > li{
+        font-size: 2vw;
+    }
+
+    .health-img figure > figcaption, .life-img figure > figcaption, .cupboard-image figure > figcaption{
+        font-size: 1.5vw;
+    }
+
+    .cupboard-provide-image{
+    }
+}
